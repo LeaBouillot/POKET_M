@@ -1,10 +1,33 @@
 #grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    &>div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  & > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      height: 100%;
+      objet-fit: contain;
     }
+    .types {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      1 > div {
+        justify-content: conter;
+        align-items: center;
+        flex-direction: column;
+      }
+      img {
+        max-width: 100px;
+        max-height: 100px;
+        object-fit: contain;
+      }
+    }
+  }
 }
